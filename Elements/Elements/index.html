@@ -55,7 +55,7 @@
 					<p>Welcome to the chat services for reporting issues in your locality.</p>
 					<ul class="actions">
 						<li><a href="#button" id="button" class="button big scrolly">Chat with us</a></li>
-						<li><a href="#one" class="button big scrolly">Call us</a></li>
+						<li><a href="#call" id="call"  class="button big scrolly">Call us</a></li>
 					</ul>
 				</div>
 
@@ -64,17 +64,40 @@
 				<script type="text/javascript">
 					$(function(){
 						$('#button').click(function(){
+							
 							if(!$('#iframe').length) {
-									$('#iframeHolder').html('<iframe width="350" height="450" position: absolute;clip: rect(110px,6000px,2000px,0px); " allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/bc9f1d23-7df9-46d7-bc19-4ea391a58c63"></iframe>');
+									$('#iframeHolder').html('<iframe allow="microphone;" width="350" height="430"src="https://console.dialogflow.com/api-client/demo/embedded/ffefcd05-5ca0-4f79-8f8a-027dc0faac3b"></iframe>');
 							}
+							
 						});  
+
 					});
 					</script>
 
 
 		<div class="center" id="iframeHolder"></div>
-	
+		
  
+			</section>
+
+
+			<section >
+				<script type="text/javascript">
+					$(function(){
+						
+						$('#call').click(function(){
+							if(!$('#disp').length) {
+									$('#display').html('<h3>Please dial the below number to contact us on the phone. Thank you!</h3><h4>+19798032727</h3>	');
+							}
+						}
+						
+						);  
+					});
+					</script>
+				<Div  class="inner" id="display"> 
+					
+					
+				</Div>
 			</section>
 			
 		
